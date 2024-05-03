@@ -61,8 +61,8 @@ public class MainActivity extends AppCompatActivity {
         redirectionText.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(MainActivity.this, registration.class);
-                startActivity(intent);
+                Intent intent1 = new Intent(MainActivity.this, registration.class);
+                startActivity(intent1);
             }
         });
     }
