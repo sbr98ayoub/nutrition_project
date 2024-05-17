@@ -19,7 +19,7 @@ public class registration extends AppCompatActivity {
     EditText passwordConfirmation ;
     Button registrationButton ;
     TextView signInText;
-    DBHelper dbHelper ;
+    DbHelper dbHelper ;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,7 +31,7 @@ public class registration extends AppCompatActivity {
         passwordConfirmation=     findViewById(R.id.confirmPassword);
         registrationButton = findViewById(R.id.registrationButton);
         signInText= findViewById(R.id.signinText);
-        dbHelper = new DBHelper(this);
+        dbHelper = new DbHelper(this);
 
 
         // ajout du listner du button
@@ -53,7 +53,7 @@ public class registration extends AppCompatActivity {
                             return;
                         }
                         // enregistrer les données dans la base de donnéés
-                        boolean registerSucess=dbHelper.insertData(user,mail,pwd);
+                        boolean registerSucess=dbHelper.insertDataUser(user,mail,pwd);
                         if(registerSucess){
                             Toast.makeText(registration.this,"registration success",Toast.LENGTH_SHORT).show();
                             Intent intent = new Intent(registration.this,MainActivity.class);

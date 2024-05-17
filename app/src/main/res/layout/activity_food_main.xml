@@ -1,0 +1,103 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:windowSoftInputMode="adjustPan">
+
+    <ImageView
+        android:id="@+id/header_image"
+        android:layout_width="wrap_content"
+        android:layout_height="89dp"
+        android:layout_alignParentTop="true"
+        android:scaleType="centerCrop"
+        android:src="@drawable/i3" />
+
+    <android.widget.SearchView
+        android:id="@+id/search_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/header_image"
+        android:layout_marginTop="15dp" />
+
+    <ListView
+        android:id="@+id/list_view"
+        android:layout_width="match_parent"
+        android:layout_height="412dp"
+        android:layout_above="@id/calculate_button"
+        android:layout_below="@id/search_view"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="102dp" />
+
+    <Button
+        android:id="@+id/calculate_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:text="Calculate Totals"
+        app:backgroundTint="#29A65E" />
+
+    <TextView
+        android:id="@+id/total_protein"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/calculate_button"
+        android:layout_marginBottom="8dp"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:text="Total Protein: 0g"
+        android:textColor="#333"
+        android:fontFamily="sans-serif-condensed"
+        android:letterSpacing="0.05"
+        android:textAlignment="center"
+        android:lineSpacingExtra="4dp"
+        />
+
+    <TextView
+        android:id="@+id/total_carbs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/total_protein"
+        android:layout_marginBottom="8dp"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:text="Total Carbs: 0g"
+        android:textColor="#333"
+        android:fontFamily="sans-serif-condensed"
+        android:letterSpacing="0.05"
+        android:textAlignment="center"
+        android:lineSpacingExtra="4dp"
+        />
+
+    <TextView
+        android:id="@+id/total_calories"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/total_carbs"
+        android:layout_marginBottom="8dp"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:text="Total Calories: 0kcal"
+        android:textColor="#333"
+        android:fontFamily="sans-serif-condensed"
+        android:letterSpacing="0.05"
+        android:textAlignment="center"
+        android:lineSpacingExtra="4dp"
+        />
+
+
+    <Button
+        android:id="@+id/reset_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/calculate_button"
+        android:layout_marginEnd="8dp"
+        android:layout_toStartOf="@+id/calculate_button"
+        android:text="Reset Totals"
+        app:backgroundTint="#F39C12" />
+
+</RelativeLayout>

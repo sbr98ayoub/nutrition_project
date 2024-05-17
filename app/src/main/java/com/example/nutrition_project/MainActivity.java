@@ -17,7 +17,7 @@ public class MainActivity extends AppCompatActivity {
     Button loginButton;
 
     TextView redirectionText ;
-    DBHelper dbHelper;
+    DbHelper dbHelper;
 
 
     @Override
@@ -29,7 +29,7 @@ public class MainActivity extends AppCompatActivity {
         password = findViewById(R.id.password);
         loginButton = findViewById(R.id.loginButton);
         redirectionText = findViewById(R.id.signupText);
-        dbHelper=new DBHelper(this);
+        dbHelper=new DbHelper(this);
 
         // ajout de listner pour le button login
         loginButton.setOnClickListener(new View.OnClickListener() {
@@ -44,7 +44,7 @@ public class MainActivity extends AppCompatActivity {
                 } else {
                     if(dbHelper.checkCredentials(user,pwd)) {
                         Toast.makeText(MainActivity.this, "bienvenu!", Toast.LENGTH_SHORT).show();
-                        Intent intent = new Intent(MainActivity.this, Home.class);
+                        Intent intent = new Intent(MainActivity.this, home.class);
                         intent.putExtra("USERNAME",user);
                         startActivity(intent);
                     }

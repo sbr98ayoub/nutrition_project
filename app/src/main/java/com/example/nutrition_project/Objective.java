@@ -54,7 +54,7 @@ public class Objective extends AppCompatActivity {
         returnButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(Objective.this,Home.class);
+                Intent intent = new Intent(Objective.this,home.class);
                 intent.putExtra("USERNAME",user);
                 startActivity(intent);
             }
