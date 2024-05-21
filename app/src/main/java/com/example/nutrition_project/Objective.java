@@ -27,6 +27,7 @@ public class Objective extends AppCompatActivity {
     private ImageView imageView;
 
     private Button returnButton ;
+    ImageView bmiImageView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -42,12 +43,14 @@ public class Objective extends AppCompatActivity {
         calorieNeedsTextView = findViewById(R.id.calorieNeedsTextView);
         imageView= findViewById(R.id.imageView3);
         returnButton= findViewById(R.id.returnButton);
+        bmiImageView = findViewById(R.id.bmiImageView);
 
         Button calculateButton = findViewById(R.id.calculateButton);
         calculateButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 calculateAndDisplayResults();
+                bmiImageView.setVisibility(View.VISIBLE);
             }
         });
 
@@ -99,14 +102,19 @@ public class Objective extends AppCompatActivity {
     private String getHealthStatus(double bmi) {
         // Determine health status based on BMI
         if (bmi < 18.5) {
-            imageView.setImageResource(R.drawable.logo);
+            bmiImageView.setImageResource(R.drawable.underweight);
             return "Underweight";
         } else if (bmi < 25) {
+            bmiImageView.setImageResource(R.drawable.normal);
             return "Normal weight";
         } else if (bmi < 30) {
+            bmiImageView.setImageResource(R.drawable.overweight);
             return "Overweight";
+
         } else {
+            bmiImageView.setImageResource(R.drawable.obese);
             return "Obese";
+
         }
     }
 
