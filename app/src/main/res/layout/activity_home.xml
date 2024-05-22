@@ -355,68 +355,8 @@
             </LinearLayout>
 
             <!-- Image Section -->
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:gravity="center"
-                android:padding="16dp">
+                   <!-- Image Section -->
 
-                <ImageView
-                    android:id="@+id/imagedownpage"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:layout_marginEnd="8dp"
-                    app:srcCompat="@drawable/img_8" />
-
-                <ImageView
-                    android:id="@+id/imageView4"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:layout_marginEnd="8dp"
-                    app:srcCompat="@drawable/img_3" />
-
-                <ImageView
-                    android:id="@+id/imageView8"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    app:srcCompat="@drawable/img_10" />
-
-            </LinearLayout>           <!-- Image Section -->
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:gravity="center"
-                android:padding="16dp">
-
-                <ImageView
-                    android:id="@+id/imagedownpage"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:layout_marginEnd="8dp"
-                    app:srcCompat="@drawable/img_8" />
-
-                <ImageView
-                    android:id="@+id/imageView4"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:layout_marginEnd="8dp"
-                    app:srcCompat="@drawable/img_3" />
-
-                <ImageView
-                    android:id="@+id/imageView8"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    app:srcCompat="@drawable/img_10" />
-
-            </LinearLayout>
 
             <!-- Nutrients Section -->
             <LinearLayout
@@ -532,6 +472,12 @@
                     android:text="Water is essential for many bodily functions since human bodies are made up of around 60% water. It helps your body keep a normal temperature, lubricates joints, protects your spinal cord, and helps you get rid of wastes through sweating, urinating, and bowel movements."
                     android:textSize="14sp"
                     android:layout_marginBottom="16dp"/>
+
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="152dp"
+                    android:layout_height="47dp"
+                    tools:srcCompat="@tools:sample/avatars" />
             </LinearLayout>
 
         </LinearLayout>
