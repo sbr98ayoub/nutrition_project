@@ -18,6 +18,7 @@ public class home extends AppCompatActivity {
     ImageView settingsButton;
 
     Button workoutButton ;
+    Button sleepButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -35,7 +36,7 @@ public class home extends AppCompatActivity {
         x4=findViewById(R.id.mealButton2);
         workoutButton=findViewById(R.id.workoutButton);
         settingsButton=findViewById(R.id.tswira3);
-
+        sleepButton=findViewById(R.id.sleepButton);
 
         x2.setOnClickListener(new View.OnClickListener() {
                                   @Override
@@ -51,6 +52,8 @@ public class home extends AppCompatActivity {
                                   @Override
                                   public void onClick(View v) {
                                       Intent intent = new Intent(home.this, FoodActivity.class);
+                                      intent.putExtra("USERNAME",username);
+
                                       startActivity(intent);
                                   }
                               }
@@ -61,6 +64,7 @@ public class home extends AppCompatActivity {
                                   @Override
                                   public void onClick(View v) {
                                       Intent intent = new Intent(home.this, Meals.class);
+                                      intent.putExtra("USERNAME",username);
                                       startActivity(intent);
                                   }
                               }
@@ -74,6 +78,7 @@ public class home extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent=new Intent(home.this,Workout.class);
+                intent.putExtra("USERNAME",username);
                 startActivity(intent);
             }
         });
@@ -81,6 +86,14 @@ public class home extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(home.this,Settings.class);
+                intent.putExtra("USERNAME",username);
+                startActivity(intent);
+            }
+        });
+        sleepButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(home.this,Sleep.class);
                 intent.putExtra("USERNAME",username);
                 startActivity(intent);
             }

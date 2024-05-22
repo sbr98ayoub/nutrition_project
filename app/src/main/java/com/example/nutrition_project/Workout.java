@@ -15,12 +15,15 @@ public class Workout extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_workout);
+        Intent intent=getIntent();
+        String username=intent.getStringExtra("USERNAME");
         returnButton=findViewById(R.id.returnToHome);
 
         returnButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent= new Intent(Workout.this,home.class);
+                intent.putExtra("USERNAME",username);
                 startActivity(intent);
             }
         });

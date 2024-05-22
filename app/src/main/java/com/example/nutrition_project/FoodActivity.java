@@ -1,5 +1,6 @@
 package com.example.nutrition_project;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -31,6 +32,8 @@ public class FoodActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_food_main);
+        Intent intent = getIntent();
+        String username = intent.getStringExtra("USERNAME");
         dbHelper = new DbHelper(this);
 
         dbHelper.insertData("Apple", 0.5, 10.0, 52.0);

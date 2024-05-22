@@ -57,10 +57,12 @@
     <ScrollView
         android:layout_width="0dp"
         android:layout_height="0dp"
-        app:layout_constraintTop_toBottomOf="@id/welcome_section"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent">
+        app:layout_constraintTop_toBottomOf="@id/welcome_section"
+        app:layout_constraintVertical_bias="1.0">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -73,18 +75,18 @@
                 android:id="@+id/navigation_buttons"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal"
+                android:layout_marginTop="16dp"
                 android:gravity="center"
-                android:layout_marginTop="16dp">
+                android:orientation="horizontal">
 
                 <LinearLayout
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:orientation="vertical"
-                    android:padding="8dp"
                     android:background="@drawable/white_background"
-                    android:gravity="center">
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="8dp">
 
                     <ImageView
                         android:id="@+id/tswira1"
@@ -97,10 +99,10 @@
                         android:id="@+id/text_tswira1"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
                         android:text="Search Food"
                         android:textAlignment="center"
-                        android:textStyle="bold|italic"
-                        android:layout_marginTop="8dp" />
+                        android:textStyle="bold|italic" />
 
                 </LinearLayout>
 
@@ -108,10 +110,10 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:orientation="vertical"
-                    android:padding="8dp"
                     android:background="@drawable/white_background"
-                    android:gravity="center">
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="8dp">
 
                     <ImageView
                         android:id="@+id/tswira2"
@@ -124,10 +126,10 @@
                         android:id="@+id/text_tswira2"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
                         android:text="Objectives"
                         android:textAlignment="center"
-                        android:textStyle="bold|italic"
-                        android:layout_marginTop="8dp" />
+                        android:textStyle="bold|italic" />
 
                 </LinearLayout>
 
@@ -135,10 +137,10 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:orientation="vertical"
-                    android:padding="8dp"
                     android:background="@drawable/white_background"
-                    android:gravity="center">
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="8dp">
 
                     <ImageView
                         android:id="@+id/tswira3"
@@ -151,10 +153,10 @@
                         android:id="@+id/text_tswira3"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
                         android:text="Settings"
                         android:textAlignment="center"
-                        android:textStyle="bold|italic"
-                        android:layout_marginTop="8dp" />
+                        android:textStyle="bold|italic" />
 
                 </LinearLayout>
 
@@ -165,62 +167,62 @@
                 android:id="@+id/textView6"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Your essential tool for adopting a healthy lifestyle!"
-                android:textSize="18sp"
-                android:gravity="center"
                 android:layout_marginBottom="16dp"
-                android:textAlignment="center" />
+                android:gravity="center"
+                android:text="Your essential tool for adopting a healthy lifestyle!"
+                android:textAlignment="center"
+                android:textSize="18sp" />
 
             <Button
                 android:id="@+id/mealButton2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Click here if you're looking for Meals !!"
+                android:layout_marginBottom="16dp"
                 android:backgroundTint="@color/orange"
-                android:textColor="@color/white"
-                android:layout_marginBottom="16dp" />
+                android:text="Click here if you're looking for Meals !!"
+                android:textColor="@color/white" />
 
             <TextView
                 android:id="@+id/textviex8"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
                 android:gravity="center"
                 android:text="Join us today to take control of your health and well-being!"
-                android:textSize="18sp"
                 android:textAlignment="center"
-                android:layout_marginBottom="16dp" />
+                android:textSize="18sp" />
 
             <!-- Discover your nutrition Section -->
             <TextView
                 android:id="@+id/nutrition_title"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Discover your nutrition"
-                android:textSize="22sp"
-                android:textStyle="bold"
-                android:gravity="center"
                 android:layout_gravity="center_horizontal"
                 android:layout_marginTop="16dp"
                 android:layout_marginBottom="8dp"
-                android:textColor="@color/purple" />
+                android:gravity="center"
+                android:text="Discover your nutrition"
+                android:textColor="@color/purple"
+                android:textSize="22sp"
+                android:textStyle="bold" />
 
             <TextView
                 android:id="@+id/nutrition_subtitle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Cronometer encourages you to not just count your calories but to focus on your nutrition as a whole."
-                android:textSize="16sp"
-                android:gravity="center"
                 android:layout_gravity="center_horizontal"
-                android:layout_marginBottom="16dp" />
+                android:layout_marginBottom="16dp"
+                android:gravity="center"
+                android:text="Cronometer encourages you to not just count your calories but to focus on your nutrition as a whole."
+                android:textSize="16sp" />
 
             <ImageView
                 android:id="@+id/nutrition_image"
                 android:layout_width="match_parent"
                 android:layout_height="200dp"
-                android:src="@drawable/nutrition2"
+                android:layout_marginBottom="16dp"
                 android:scaleType="centerCrop"
-                android:layout_marginBottom="16dp"/>
+                android:src="@drawable/nutrition2" />
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -230,85 +232,85 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:orientation="horizontal"
-                    android:layout_marginBottom="16dp">
+                    android:layout_marginBottom="16dp"
+                    android:orientation="horizontal">
 
                     <ImageView
                         android:layout_width="24dp"
                         android:layout_height="24dp"
+                        android:layout_marginRight="8dp"
                         android:src="@drawable/iconcheck"
-                        android:tint="@android:color/holo_green_dark"
-                        android:layout_marginRight="8dp"/>
+                        android:tint="@android:color/holo_green_dark" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Over 9 million users"
                         android:textSize="16sp"
-                        android:textStyle="bold"/>
+                        android:textStyle="bold" />
                 </LinearLayout>
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginBottom="16dp"
                     android:text="Join the community to get tips and inspiration from other users on our forums and Facebook group."
-                    android:textSize="14sp"
-                    android:layout_marginBottom="16dp"/>
+                    android:textSize="14sp" />
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:orientation="horizontal"
-                    android:layout_marginBottom="16dp">
+                    android:layout_marginBottom="16dp"
+                    android:orientation="horizontal">
 
                     <ImageView
                         android:layout_width="24dp"
                         android:layout_height="24dp"
+                        android:layout_marginRight="8dp"
                         android:src="@drawable/iconcheck"
-                        android:tint="@android:color/holo_green_dark"
-                        android:layout_marginRight="8dp"/>
+                        android:tint="@android:color/holo_green_dark" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Accurate nutrition data"
                         android:textSize="16sp"
-                        android:textStyle="bold"/>
+                        android:textStyle="bold" />
                 </LinearLayout>
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginBottom="16dp"
                     android:text="Be confident that the food you're logging has the correct nutrition data."
-                    android:textSize="14sp"
-                    android:layout_marginBottom="16dp"/>
+                    android:textSize="14sp" />
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:orientation="horizontal"
-                    android:layout_marginBottom="16dp">
+                    android:layout_marginBottom="16dp"
+                    android:orientation="horizontal">
 
                     <ImageView
                         android:layout_width="24dp"
                         android:layout_height="24dp"
+                        android:layout_marginRight="8dp"
                         android:src="@drawable/iconcheck"
-                        android:tint="@android:color/holo_green_dark"
-                        android:layout_marginRight="8dp"/>
+                        android:tint="@android:color/holo_green_dark" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Customizable targets"
                         android:textSize="16sp"
-                        android:textStyle="bold"/>
+                        android:textStyle="bold" />
                 </LinearLayout>
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Set personalized nutrition goals, track your progress, and adjust as needed."
-                    android:textSize="14sp"/>
+                    android:textSize="14sp" />
             </LinearLayout>
 
             <!-- Discover Section -->
@@ -316,46 +318,46 @@
                 android:id="@+id/discover_title"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Discover"
-                android:textSize="22sp"
-                android:textStyle="bold"
-                android:gravity="center"
                 android:layout_gravity="center_horizontal"
                 android:layout_marginTop="16dp"
                 android:layout_marginBottom="8dp"
-                android:textColor="@color/purple" />
+                android:gravity="center"
+                android:text="Discover"
+                android:textColor="@color/purple"
+                android:textSize="22sp"
+                android:textStyle="bold" />
 
             <LinearLayout
                 android:id="@+id/discover_buttons"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:gravity="center">
+                android:gravity="center"
+                android:orientation="horizontal">
 
                 <Button
                     android:id="@+id/sleepButton"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="Sleep"
                     android:layout_margin="8dp"
+                    android:layout_weight="1"
                     android:backgroundTint="@color/blue"
+                    android:text="Sleep"
                     android:textColor="@color/white" />
 
                 <Button
                     android:id="@+id/workoutButton"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="Workout"
                     android:layout_margin="8dp"
+                    android:layout_weight="1"
                     android:backgroundTint="@color/green"
+                    android:text="Workout"
                     android:textColor="@color/white" />
 
             </LinearLayout>
 
             <!-- Image Section -->
-                   <!-- Image Section -->
+            <!-- Image Section -->
 
 
             <!-- Nutrients Section -->
@@ -368,110 +370,110 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="The Six Major Nutrients"
-                    android:textSize="22sp"
-                    android:textStyle="bold"
-                    android:gravity="center"
                     android:layout_gravity="center_horizontal"
                     android:layout_marginTop="16dp"
                     android:layout_marginBottom="8dp"
-                    android:textColor="@color/purple" />
+                    android:gravity="center"
+                    android:text="The Six Major Nutrients"
+                    android:textColor="@color/purple"
+                    android:textSize="22sp"
+                    android:textStyle="bold" />
 
                 <!-- Carbohydrates -->
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
                     android:text="1. Carbohydrates"
                     android:textSize="18sp"
-                    android:textStyle="bold"
-                    android:layout_marginBottom="8dp" />
+                    android:textStyle="bold" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginBottom="16dp"
                     android:text="Carbohydrates are the body's main source of energy. They are found in fruits, vegetables, and grains."
-                    android:textSize="14sp"
-                    android:layout_marginBottom="16dp" />
+                    android:textSize="14sp" />
 
                 <!-- Proteins -->
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
                     android:text="2. Proteins"
                     android:textSize="18sp"
-                    android:textStyle="bold"
-                    android:layout_marginBottom="8dp" />
+                    android:textStyle="bold" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginBottom="16dp"
                     android:text="Proteins are essential for the growth and repair of body tissues. They are found in meat, dairy products, nuts, and beans."
-                    android:textSize="14sp"
-                    android:layout_marginBottom="16dp" />
+                    android:textSize="14sp" />
 
                 <!-- Fats -->
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
                     android:text="3. Fats"
                     android:textSize="18sp"
-                    android:textStyle="bold"
-                    android:layout_marginBottom="8dp" />
+                    android:textStyle="bold" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginBottom="16dp"
                     android:text="Fats provide a source of energy and are important for the absorption of vitamins. They are found in oils, butter, and nuts."
-                    android:textSize="14sp"
-                    android:layout_marginBottom="16dp" />
+                    android:textSize="14sp" />
 
                 <!-- Vitamins -->
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
                     android:text="4. Vitamins"
                     android:textSize="18sp"
-                    android:textStyle="bold"
-                    android:layout_marginBottom="8dp" />
+                    android:textStyle="bold" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginBottom="16dp"
                     android:text="Vitamins are essential for various biochemical reactions in the body. They are found in fruits, vegetables, and dairy products."
-                    android:textSize="14sp"
-                    android:layout_marginBottom="16dp" />
+                    android:textSize="14sp" />
 
                 <!-- Minerals -->
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
                     android:text="5. Minerals"
                     android:textSize="18sp"
-                    android:textStyle="bold"
-                    android:layout_marginBottom="8dp" />
+                    android:textStyle="bold" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginBottom="16dp"
                     android:text="Minerals are important for building strong bones and teeth, blood, skin, hair, nerve function, muscle and for metabolic processes. They are found in meat, cereals, fish, milk and dairy products, vegetables, fruit (especially dried fruit) and nuts."
-                    android:textSize="14sp"
-                    android:layout_marginBottom="16dp" />
+                    android:textSize="14sp" />
 
                 <!-- Water -->
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
                     android:text="6. Water"
                     android:textSize="18sp"
-                    android:textStyle="bold"
-                    android:layout_marginBottom="8dp" />
+                    android:textStyle="bold" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginBottom="16dp"
                     android:text="Water is essential for many bodily functions since human bodies are made up of around 60% water. It helps your body keep a normal temperature, lubricates joints, protects your spinal cord, and helps you get rid of wastes through sweating, urinating, and bowel movements."
-                    android:textSize="14sp"
-                    android:layout_marginBottom="16dp"/>
+                    android:textSize="14sp" />
 
                 <ImageView
                     android:id="@+id/imageView"
